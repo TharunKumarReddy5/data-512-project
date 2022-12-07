@@ -1,39 +1,153 @@
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+<https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs>
+
 ![contributors](https://img.shields.io/github/contributors/TharunKumarReddy5/data-512-project.svg)
-![codesize](https://img.shields.io/github/languages/code-size/TharunKumarReddy5/data-512-project.svg) 
-![pullrequests](https://img.shields.io/github/issues-pr/TharunKumarReddy5/data-512-project.svg) 
+
+![codesize](https://img.shields.io/github/languages/code-size/TharunKumarReddy5/data-512-project.svg)
+
+![pullrequests](https://img.shields.io/github/issues-pr/TharunKumarReddy5/data-512-project.svg)
+
 ![closedpullrequests](https://img.shields.io/github/issues-pr-closed-raw/TharunKumarReddy5/data-512-project.svg)
 
-data-512-project
-================================
-This repository contains the the final project documents and code for DATA 512 Human Centered Data Science course project component at the University of Washington - Masters in Data Science program
+**Analysis of Google Search Patterns during the COVID-19 pandemic**
 
-Date of Code Run: 2022-11-3
+Analysis of Google Search Patterns in Milwaukee County, WI during the COVID-19 pandemic
+=======================================================================================
+
+data-512-project
+================
+
+This repository contains the the final project documents and code for DATA 512
+Human Centered Data Science course project component at the University of
+Washington - Masters in Data Science program
+
+Date of Code Run: 2022-12-04
 
 Goal: Course Project
-==============================
+====================
 
-We have all been affected by a worldwide pandemic for the past three years. This has had a terrible and disruptive impact on many nations and has had a significant negative personal impact on many people and their families. The datafication of the pandemic is one feature that has been difficult to ignore during the past three years.
+We have all been affected by a worldwide pandemic for the past three years. This
+has had a terrible and disruptive impact on many nations and has had a
+significant negative personal impact on many people and their families. The
+datafication of the pandemic is one feature that has been difficult to ignore
+during the past three years.
 
-data-512-project-common-analysis project is an analysis exercise with primary goal to understand the general biases in the models that originate from the bias in the input data used for training the model. This collaborative analysis gives a good clarity on how the masking policy is impacting the progression of the COVID virus among various counties in USA. It helps us understand the reasons, impact and other important factors that directly or indirectly impacted the COVID infection spread.
+data-512-project-common-analysis project is an analysis exercise with primary
+goal to understand the general biases in the models that originate from the bias
+in the input data used for training the model. This collaborative analysis gives
+a good clarity on how the masking policy is impacting the progression of the
+COVID virus among various counties in USA. It helps us understand the reasons,
+impact and other important factors that directly or indirectly impacted the
+COVID infection spread.
 
 County Assigned: Milwaukee County, Wisconsin, United States
 
-Datasource Information
-----------------------
-The data for this project is extracted has different aspects and way of collection. One source is CDC for county specific information, other John Hopkins with confirmed cases data shared on Kaggle and other is New York Times Survey data.
+Reproducibility
+---------------
 
-Dataset Sources
-The RAW_us_confirmed_cases.csv file from the Kaggle repository of John Hopkins University COVID-19 data. This data is updated daily and recent version is used for analysis
-The CDC dataset of masking mandates by county. Note that the CDC stopped collecting this policy information in September 2021.
-The New York Times mask compliance survey data.
+This analysis contained in this report is meant to be fully reproducible.
+The [Checkouts by Title
+data](https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6) is
+publicly available through Seattle governments Open Data Program. However this
+dataset exceeds Github's current individual file size limit and is therefore if
+one wishes to reproduce with the full data set please visit the link above and
+download as csv. If for some reason the link is no longer available please
+visit <https://data.seattle.gov/> and search for "Checkouts by Title" or
+"Checkouts".
+
+Raw Data
+--------
+
+The data is downloaded from the below sources: - The RAW_us_confirmed_cases.csv
+file from the [Kaggle repository of John Hopkins University COVID-19
+data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)  
+- The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins
+University COVID-19
+data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)  
+The data is structured as below for both data sets, with multiple columns for
+each additional day of data (wide format):
+
+ 
+
+The [CDC
+dataset](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i)
+of masking mandates by county. **THIS DATA IS NOT INCLUDED IN THIS REPOSITORY AS
+THE FILESIZE WAS TOO LARGE. PLEASE DOWNLOAD IT DIRECTLY FROM THE LINK LOCALLY**
+
+ 
+
+The New York Times mask compliance [survey data.]
+
+ 
+
+### COVID-19 Data
+
+I initially began by looking at how COVID-19 affected the entire county. To find
+out how the county was impacted I reviewed the number of confirmed cases, and
+the number of new daily cases in Essex County, New Jersey. I also looked at the
+timeline of policys that were put in place such as masking mandates, and how
+often they were worn, to view any correlations between how the entire country
+was impacted. There were several datasets that I used for this analysis.
+
+#### <https://github.com/aaliyahfiala42/data-512-a7#covid-19-data-from-john-hopkins-university-raw_us_confirmed_casescsv>COVID-19 Data From John Hopkins University (RAW_us_confirmed_cases.csv)
+
+The cumulative confirmed case counts for where gathered from the Kaggle
+repository of John Hopkins University COVID-19 raw United States confirmed cases
+dataset. Data
+Source: <https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv>
+
+#### <https://github.com/aaliyahfiala42/data-512-a7#us-state-and-territorial-public-mask-mandates-from-april-10-2020-through-august-15-2021-by-county-by-day-mask-use-by-countycsv>U.S. State and Territorial Public Mask Mandates From April 10, 2020 through August 15, 2021 by County by Day (mask-use-by-county.csv)
+
+The data for masking mandates was sourced from the CDC dataset of masking
+mandates by county. Data
+Source: <https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i>.
+
+ 
+
+Data sources Information
+------------------------
+
+The data for this project is extracted has different aspects and way of
+collection. One source is CDC for county specific information, other John
+Hopkins with confirmed cases data shared on Kaggle and other is New York Times
+Survey data.
+
+Dataset Sources The RAW_us_confirmed_cases.csv file from the Kaggle repository
+of John Hopkins University COVID-19 data. This data is updated daily and recent
+version is used for analysis The CDC dataset of masking mandates by county. Note
+that the CDC stopped collecting this policy information in September 2021. The
+New York Times mask compliance survey data.
 
 Issues and Special Considerations
 ---------------------------------
 
-1.  There are few data gaps in the confirmed cases data. To bypass through these gaps, rolling averages are used on confirmed cases data. This will eliminate any noise that arises in the data due to data collection issues
+1.  There are few data gaps in the confirmed cases data. To bypass through these
+    gaps, rolling averages are used on confirmed cases data. This will eliminate
+    any noise that arises in the data due to data collection issues
 
-2.  For milwaukee county, the mask usage survey was conducted before the masking mandate was in place. Hence, these % values shouldn't be taken at face value when inferring the impact of masking on the infection spread 
+2.  For milwaukee county, the mask usage survey was conducted before the masking
+    mandate was in place. Hence, these % values shouldn't be taken at face value
+    when inferring the impact of masking on the infection spread
+
+Human-Centered Considerations
+-----------------------------
+
+This project could be very useful for someone who plans move to the Boston city
+or is already staying there. It contains the most recent data possible. It could
+help someone understand the crime statistics of the city such as the main places
+and times where these crimes happen, etc. and help make better decisions about
+where to stay and which places to avoid in order to stay safe. Survival instinct
+is one of the most basic instincts to all kinds of life and hopefully this work
+could help someone improve their chances of getting hurt.
+
+It could be the case that this analysis might result in showing that certain
+parts of the city are more common for certain crimes. And many-a-times, the
+areas could be tied down to a certain community but that is not the intent of
+the study and hence the mapping is not a part of this study or the dataset. The
+intent here is just to provide information for people to make smarter choices in
+order to stay safe and I do not wish for any service provider to alter their
+services based on this information. Moreover, this information is public and
+provided by the government and could anyway be misused if so were the intentions
+of people. This project does not aim to aid misuse of any form.
 
 Dependencies
 ------------
@@ -47,7 +161,8 @@ python -m pip install -r requirements.txt
 Repository Structure
 --------------------
 
-Here are the main folders in our github data-512-project-common-analysis repository:
+Here are the main folders in our github data-512-project-common-analysis
+repository:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .
@@ -79,77 +194,184 @@ Here are the main folders in our github data-512-project-common-analysis reposit
 Input Data Files
 ----------------
 
--   RAW_us_confirmed_cases.csv - Consists of daily confirmed COVID cases for all counties in USA
+-   RAW_us_confirmed_cases.csv - Consists of daily confirmed COVID cases for all
+    counties in USA
 
--   RAW_us_deaths.csv - Consists of daily fatality count due to COVID for all counties in USA
-    
--   mask-mandate-milwaukee.csv - Mask mandate information for the Milwaukee county
+-   RAW_us_deaths.csv - Consists of daily fatality count due to COVID for all
+    counties in USA
 
--   mask-use-by-county.csv - Survey that contains the percent values of mask compliance based on level of compliance
+-   mask-mandate-milwaukee.csv - Mask mandate information for the Milwaukee
+    county
 
-Output Files
------------------
+-   mask-use-by-county.csv - Survey that contains the percent values of mask
+    compliance based on level of compliance
+
+Data (Source and Schema)
+------------------------
+
+The [Education
+Statistics](https://datacatalog.worldbank.org/dataset/education-statistics) dataset
+being used in this assignment is downloaded from the [World
+Bank](http://www.worldbank.org/). The dataset sources it's data from:
+
+1.  UIS ([UNESCO Institute for Statistics](http://uis.unesco.org/)) -
+    Administrative country data
+
+2.  Several International and Regional learning assessments
+
+3.  [World Bank Education Projects
+    Database](http://datatopics.worldbank.org/education/wQueries/qprojects) -
+    activities, components and sub-sectors of WB Education projects since 1998
+
+4.  [World Bank Education Expenditures
+    Database](http://datatopics.worldbank.org/education/wQueries/qexpenditures) -
+    Education expenditure data
+
+The datasets have been downloaded and added to
+the [data](https://github.com/CoderHam/data-512-final-project/tree/master/data) directory
+and consists of 5 parts that have been described below, plus one additional
+dataset for income groups:
+
+[EdStatsCountry.csv](https://github.com/CoderHam/data-512-final-project/tree/master/data/EdStatsCountry.csv)
+
+ 
+
+Results Summary
+---------------
 
 ### Screenshots
 
-Examples of output plots generated by the functions. Also mentioned the inference drawn from various metrics calculated using the provided COVID data for milwaukee county. These metrics were compared against the masking mandate policy implemented. Below are few of the findings.
+Examples of output plots generated by the functions. Also mentioned the
+inference drawn from various metrics calculated using the provided COVID data
+for milwaukee county. These metrics were compared against the masking mandate
+policy implemented. Below are few of the findings.
 
--   **Screenshot of plot 1:**  Incidence Rate or Positive Per capita Plot
+-   **Screenshot of plot 1:** Incidence Rate or Positive Per capita Plot
 
-The first graph contains the positive cases per capita rate and it's progression with respect to masking policy changes
+The first graph contains the positive cases per capita rate and it's progression
+with respect to masking policy changes
 
 [Image1](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/cases_per_capita.png)
 
 ![Alt text](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/cases_per_capita.png)
 
-**Inference:**
-We can observe that after the before the mask mandate is enforced, the spread category is uncontrolled (red band) indicating the necessity for a mask mandate. Post the mask mandate is implemented, we can notice that the phase shifted into a controlled band (orange) and stayed for 60 time intervals (2 months). The same trend can be observed before the masking mandate end. However, the impact of removing the mandate can be seen in the next 30 time intervals (1 month). This shows a clear impact of masking on the positive cases per capita in milwaukee.
+**Inference:** We can observe that after the before the mask mandate is
+enforced, the spread category is uncontrolled (red band) indicating the
+necessity for a mask mandate. Post the mask mandate is implemented, we can
+notice that the phase shifted into a controlled band (orange) and stayed for 60
+time intervals (2 months). The same trend can be observed before the masking
+mandate end. However, the impact of removing the mandate can be seen in the next
+30 time intervals (1 month). This shows a clear impact of masking on the
+positive cases per capita in milwaukee.
 
--   **Screenshot of plot 2:**  Growth Factor Plot
+-   **Screenshot of plot 2:** Growth Factor Plot
 
-The second graph contains the growth factor and it's progression with respect to masking policy changes
+The second graph contains the growth factor and it's progression with respect to
+masking policy changes
 
 [Image2](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/growth_factor.png)
 
 ![Alt text](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/growth_factor.png)
 
-**Inference:**
-The growth factor plot shows a clear indication of how the GF values have died down after the mask mandate started and the impact lasted for almost 2 months before it spiked again during the next wave of COVID. High growth factor values are again observed after the mask mandate was relaxed in April 2021.
+**Inference:** The growth factor plot shows a clear indication of how the GF
+values have died down after the mask mandate started and the impact lasted for
+almost 2 months before it spiked again during the next wave of COVID. High
+growth factor values are again observed after the mask mandate was relaxed in
+April 2021.
 
--   **Screenshot of plot 3:**  Transmission Rate Plot
+-   **Screenshot of plot 3:** Transmission Rate Plot
 
-The third graph contains the virus transmission rate and it's progression with respect to masking policy changes
+The third graph contains the virus transmission rate and it's progression with
+respect to masking policy changes
 
 [Image3](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/transmission_rate.png)
 
 ![Alt text](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/transmission_rate.png)
 
-**Inference:**
-In the plot, we can observe that transmission rate has gone down after the masking mandate has started. This also indicates how the spread of the virus has gone down after people following the mandate. However, the transmission rate peaked immediately after the mandate is removed but came down after a month. This can be because of the vaccination phase that started and implementing second doses to mass population.
+**Inference:** In the plot, we can observe that transmission rate has gone down
+after the masking mandate has started. This also indicates how the spread of the
+virus has gone down after people following the mandate. However, the
+transmission rate peaked immediately after the mandate is removed but came down
+after a month. This can be because of the vaccination phase that started and
+implementing second doses to mass population.
 
--   **Screenshot of plot 4:**  Infection Rate Plot (with changepoints)
+-   **Screenshot of plot 4:** Infection Rate Plot (with changepoints)
 
-The fourth graph contains the infection rate and it's progression with respect to masking policy changes
+The fourth graph contains the infection rate and it's progression with respect
+to masking policy changes
 
 [Image4](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/infection_rate.png)
 
 ![Alt text](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/infection_rate.png)
 
-**Inference:**
-From the 4th change point, we can observe that how the masking mandate brought down the infection rate. This change shows an evidence of the impact of masking policy. From the 8th change point to 9th, there is no huge difference in infection rates. Hence, removing masking policy can be attributed to the stability. However, at the final change point (10th) the COVID infection rate started to peak.
+**Inference:** From the 4th change point, we can observe that how the masking
+mandate brought down the infection rate. This change shows an evidence of the
+impact of masking policy. From the 8th change point to 9th, there is no huge
+difference in infection rates. Hence, removing masking policy can be attributed
+to the stability. However, at the final change point (10th) the COVID infection
+rate started to peak.
 
--   **Screenshot of plot 5:**  Derivative of Infection Rate (with changepoints):
+-   **Screenshot of plot 5:** Derivative of Infection Rate (with changepoints):
 
-The fifth graph contains the derivate of infection rate and it's progression with respect to masking policy changes
+The fifth graph contains the derivate of infection rate and it's progression
+with respect to masking policy changes
 
 [Image5](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/derivative_infection_rate.png)
 
 ![Alt text](https://github.com/TharunKumarReddy5/data-512-project-common-analysis/blob/main/plots/derivative_infection_rate.png)
 
-**Inference:**
-We can observe that the after 4th change point after the masking mandate started, the derivate is more closer to 0 indicating the change in infection rate over time is not frequent. The same pattern can be observed after removing the mandate but oscillated more at the end.
+**Inference:** We can observe that the after 4th change point after the masking
+mandate started, the derivate is more closer to 0 indicating the change in
+infection rate over time is not frequent. The same pattern can be observed after
+removing the mandate but oscillated more at the end.
 
-Overall, it is evident from the above analysis as to why there arose a necessity for enforcing and removing masking policy. The analysis clearly shows an impact of masking on infection rate and how it accelerated after the mandate is removed. However, there are few exceptions where observed, where we see peak infection rates even after the masking policy is in place. This can be attributed to high impact of other aspects like vaccinations, recovery rates, hospitalizations
+Overall, it is evident from the above analysis as to why there arose a necessity
+for enforcing and removing masking policy. The analysis clearly shows an impact
+of masking on infection rate and how it accelerated after the mandate is
+removed. However, there are few exceptions where observed, where we see peak
+infection rates even after the masking policy is in place. This can be
+attributed to high impact of other aspects like vaccinations, recovery rates,
+hospitalizations
+
+License for this project
+------------------------
+
+-   MIT License(<https://opensource.org/licenses/MIT>)
+
+Data set Licensing
+------------------
+
+-   The Johns Hopkins data is available under the [creative commons
+    license](https://creativecommons.org/licenses/by/4.0/) which means the data
+    is available with proper attribution.  
+    
+
+-   The CDC data is available under the below citation:  
+    CDC, COVID-19 Community Intervention & Critical Populations Task Force,
+    Monitoring & Evaluation Team, Mitigation Policy Analysis Unit, the CDC,
+    Center for State, Tribal, Local, and Territorial Support, Public Health Law
+    Program, and Max Gakh, Assistant Professor, School of Public Health,
+    University of Nevada, Las Vegas, “U.S. State and Territorial Orders
+    Requiring Masks in Public,” (August 15, 2021).  
+    
+
+-   The New York Times mask data is available under this [permissive
+    license](https://github.com/nytimes/covid-19-data/blob/master/LICENSE) which
+    is highly permissive with proper attribution.
+
+Relevant documentation
+----------------------
+
+-   [1] Kaggle project <https://www.kaggle.com/ludobenistant/hr-analytics>
+
+-   [2] Latest report from Bureau of
+    Labour <https://www.bls.gov/news.release/jolts.nr0.htm>
+
+-   [3] History of business
+    intelligence <https://www.betterbuys.com/bi/history-of-business-intelligence/>
+
+-   [4] Article on solving attrition with
+    data <https://towardsdatascience.com/solving-staff-attrition-with-data-3f09af2694cd>
 
 Code Style
 ----------
