@@ -1,12 +1,12 @@
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-![contributors](https://img.shields.io/github/contributors/TharunKumarReddy5/data-512-project-common-analysis.svg)
-![codesize](https://img.shields.io/github/languages/code-size/TharunKumarReddy5/data-512-project-common-analysis.svg) 
-![pullrequests](https://img.shields.io/github/issues-pr/TharunKumarReddy5/data-512-project-common-analysis.svg) 
-![closedpullrequests](https://img.shields.io/github/issues-pr-closed-raw/TharunKumarReddy5/data-512-project-common-analysis.svg)
+![contributors](https://img.shields.io/github/contributors/TharunKumarReddy5/data-512-project.svg)
+![codesize](https://img.shields.io/github/languages/code-size/TharunKumarReddy5/data-512-project.svg) 
+![pullrequests](https://img.shields.io/github/issues-pr/TharunKumarReddy5/data-512-project.svg) 
+![closedpullrequests](https://img.shields.io/github/issues-pr-closed-raw/TharunKumarReddy5/data-512-project.svg)
 
-data-512-project-common-analysis
+data-512-project
 ================================
-This repository contains the Common analysis for DATA 512 Human Centered Data Science course project component at the University of Washington - Masters in Data Science program
+This repository contains the the final project documents and code for DATA 512 Human Centered Data Science course project component at the University of Washington - Masters in Data Science program
 
 Date of Code Run: 2022-11-3
 
