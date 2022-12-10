@@ -219,7 +219,7 @@ The second graph contains the change points detected for the derivative of the i
 
 **Key Takeaways:** Overall, it is evident from the above analysis the reasons for enforcing and lifting the masking policy took place in Milwaukee County. It indicates the impact of masking on the infection rate by showing how it decelerated after the mandate was enforced and accelerated after the mandate was removed. However, a few exceptions are observed where we see peak infection rates even after the masking policy is in place. This can be attributed to the high impact of other aspects like vaccinations, recovery rates, and hospitalizations.
 
-## Change point detection – Google Symptom Search Trends
+### Change point detection – Google Symptom Search Trends
 
 **Change Points in COUGH symptom search**
 
@@ -249,7 +249,7 @@ The fifth graph contains the change points detected for PNEUMONIA symptom search
 
 The PNEUMONIA symptom search term is strongly associated with daily COVID-19 fatalities proving that it is a highly critical health issue that requires immediate hospitalization. For PNEUMONIA, a new set of change points are identified that are inconsistent with those of infection rate and mask mandate changes.
 
-## Regression Inference – Impact of Mask Mandate on Symptom Searches
+### Regression Inference – Impact of Mask Mandate on Symptom Searches
 
 **Impact of mask mandate on symptom search terms**
 
@@ -261,7 +261,7 @@ The sixth graph contains the impact percentages of the search terms due to mask 
 
 **Key Takeaways:** SHORTNESS OF BREATH, COUGH and SORE THROAT are the top 3 symptom searches impacted by the mask mandate. SHORTNESS OF BREATH symptom search is highly impacted by the removal of the mask mandate in Milwaukee County (20% greater than another county with a continuous mask mandate). FEVER symptom search growth rate is approximately the same with and without mask mandate. PNEUMONIA symptom search term is the least impacted symptom search with the mask mandate in Milwaukee County.
 
-## Correlation Inference – Change in the association of Symptom Searches over time
+### Correlation Inference – Change in the association of Symptom Searches over time
 
 **Correlation windows of SHORTNESS OF BREATH symptom search**
 
@@ -281,7 +281,7 @@ The eighth graph contains the correlation heatmap for PNEUMONIA symptom search
 
 **Key Takeaways:** The SHORTNESS OF BREATH search term is strongly correlated with a lag of 4 days when there is no mask mandate. However, this correlation is not seen much during the mask mandate except between the 5th and 8th change point period caused by the 2nd wave of COVID-19 (Red region in the middle of Figure 11a). The PNEUMONIA search term is highly correlated at day 11 with daily fatalities and is not impacted much due to the mask mandate (red regions in Figure 11b). These two figures collectively show the variation in the association between the symptom searches with confirmed cases over time.
 
-## Causal Inference – Vaccination Intent and side-effects
+### Causal Inference – Vaccination Intent and side-effects
 
 **Vaccination causal inference graph (with change points)**
 
