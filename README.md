@@ -36,22 +36,25 @@ County Assigned: Milwaukee County, Wisconsin, United States
 
 Below are the set of Research questions and Hypothesis the study tries to answer:
 
-#### Research Question 1 #### 
+#### Research Question 1: #### 
 How does the Public Mask Mandate in the county impacts the search for all COVID-19 symptoms? 
+#### Hypothesis 1: ####
+Individuals are X% less likely to search for symptoms if the Public Mask Mandate is effective in the county. • The mask mandate decreases the likelihood of searching for any symptoms within the last X days by Y%. 
 
-Hypothesis 1 – Individuals are X% less likely to search for symptoms if the Public Mask Mandate is effective in the county. • The mask mandate decreases the likelihood of searching for any symptoms within the last X days by Y%. 
+#### Research Question 2: #### 
+What are the top symptoms strongly impacted by the mask mandate? 
+#### Hypothesis 2: ####
+People are X%, Y%, and Z% less likely to search for fever, chills, and fatigue in Milwaukee County during Mask Mandate 
 
-Research Question 2 – What are the top symptoms strongly impacted by the mask mandate? 
+#### Research Question 3: #### 
+What are the highly correlated symptom search terms with the daily confirmed COVID-19 cases and fatalities before and after the mask mandate policy? 
+#### Hypothesis 3: ####
+“Severe chest pain” positively correlates with COVID-19 fatalities when no mask mandate exists. • A time-lag correlation of X days is observed between the daily number of confirmed cases with the top symptom search terms “cough” and “shortness of breath” during the mask mandate. 
 
-Hypothesis 2 – People are X%, Y%, and Z% less likely to search for fever, chills, and fatigue in Milwaukee County during Mask Mandate 
-
-Research Question 3 - What are the highly correlated symptom search terms with the daily confirmed COVID-19 cases and fatalities before and after the mask mandate policy? 
-
-Hypothesis 3 – “Severe chest pain” positively correlates with COVID-19 fatalities when no mask mandate exists. • A time-lag correlation of X days is observed between the daily number of confirmed cases with the top symptom search terms “cough” and “shortness of breath” during the mask mandate. 
-
-Research Question 4 - How are vaccination intent and side effect search terms correlated with mask mandate policies?
-
-Hypothesis 4 – Individuals showed X% more vaccination intention when the masking mandate was removed in the county
+#### Research Question 4: ####
+How are vaccination intent and side effect search terms correlated with mask mandate policies?
+#### Hypothesis 4: ####
+Individuals showed X% more vaccination intention when the masking mandate was removed in the county
 
 Raw Data Sources
 ====================
