@@ -106,10 +106,12 @@ The New York Times mask compliance [survey data.]
 
 ### Data Source 4:
 • Data set - [COVID-19 Search Trends symptoms dataset](https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/table-search-trends.md)
+
 • Description – The dataset consists of aggregated, anonymized trends in Google searches for more than 400 health symptoms, signs, and conditions, such as cough, fever, and difficulty breathing. The dataset provides a time series for each region, showing the relative volume of searches for each symptom
 
 ### Data Source 5:
 • Data set - [COVID-19 Vaccination Search Insights](https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/table-vaccination-search-insights.md)
+
 • Description - This aggregated, anonymized data shows trends in search patterns related to COVID-19 vaccination. These trends in search patterns are made available with the intention of helping design, target, and evaluate public education campaigns. These trends reflect the relative interest in Google searches related to COVID-19 vaccination.
 
 
