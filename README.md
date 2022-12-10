@@ -37,89 +37,82 @@ County Assigned: Milwaukee County, Wisconsin, United States
 Below are the set of Research questions and Hypothesis the study tries to answer:
 
 Research Question 1 – How does the Public Mask Mandate in the county impacts the search for all COVID-19 symptoms? 
+
 Hypothesis 1 – • Individuals are X% less likely to search for symptoms if the Public Mask Mandate is effective in the county. • The mask mandate decreases the likelihood of searching for any symptoms within the last X days by Y%. 
 
 Research Question 2 – What are the top symptoms strongly impacted by the mask mandate? 
+
 Hypothesis 2 – People are X%, Y%, and Z% less likely to search for fever, chills, and fatigue in Milwaukee County during Mask Mandate 
 
 Research Question 3 - What are the highly correlated symptom search terms with the daily confirmed COVID-19 cases and fatalities before and after the mask mandate policy? 
+
 Hypothesis 3 – • “Severe chest pain” positively correlates with COVID-19 fatalities when no mask mandate exists. • A time-lag correlation of X days is observed between the daily number of confirmed cases with the top symptom search terms “cough” and “shortness of breath” during the mask mandate. 
 
 Research Question 4 - How are vaccination intent and side effect search terms correlated with mask mandate policies?
+
 Hypothesis 4 – Individuals showed X% more vaccination intention when the masking mandate was removed in the county
 
-Raw Data
+Raw Data Sources
 ====================
 
-The data is downloaded from the below sources: 
+Data Source 1:
+----------------
 - The RAW_us_confirmed_cases.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
 - The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)
 The data is structured as below for both data sets, with multiple columns for each additional day of data (wide format):
 
-| Attempt | #1  |
-| ------- | --- |
-| Seconds | 301 |
+| Column name     | Description               |
+| --------------- | ------------------------- |
+| Province\_State | Province or state         |
+| Admin2          | Country                   |
+| UID             | Unique identifier         |
+| iso2            | Unused geography code     |
+| iso3            | Unused geography code     |
+| code3           | Unused geography code     |
+| FIPS            | Unique 5-digit identifier |
+| Lat             | Latitude                  |
+| Long\_          | Longitude                 |
 
-Column name	Description
-Province_State	Province or state
-Admin2	Country
-UID	Unique identifier
-iso2	Unused geography code
-iso3	Unused geography code
-code3	Unused geography code
-FIPS	Unique 5-digit identifier
-Lat	Latitude
-Long_	Longitude
-![image](https://user-images.githubusercontent.com/40633771/206841548-26b5bf29-c9a3-4cd7-9533-f58a566c5efe.png)
+Data Source 2:
+----------------
+The [CDC dataset](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i) of masking mandates by county. **THIS DATA IS NOT INCLUDED IN THIS REPOSITORY AS THE FILESIZE WAS TOO LARGE. PLEASE DOWNLOAD IT DIRECTLY FROM THE LINK LOCALLY**
 
+| Column name                       | Description               |
+| --------------------------------- | ------------------------- |
+| State\_Tribe\_Territory           | State or tribe name       |
+| County\_Name                      | County name               |
+| FIPS\_State                       | Numeric state identifier  |
+| FIPS\_County                      | Numeric county identifier |
+| date                              | YYYY-MM-DD format         |
+| order\_code                       | Order type                |
+| Face\_Masks\_Required\_in\_Public | Boolean identifier        |
+| Source\_of\_Action                | Authority                 |
+| URL                               | URL                       |
+| Citation                          | Citation                  |
 
-The [CDC dataset](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i)
-of masking mandates by county. **THIS DATA IS NOT INCLUDED IN THIS REPOSITORY AS
-THE FILESIZE WAS TOO LARGE. PLEASE DOWNLOAD IT DIRECTLY FROM THE LINK LOCALLY**
-
- 
-
+Data Source 3:
+----------------
 The New York Times mask compliance [survey data.]
 
- 
+| Column name | Description                                                     |
+| ----------- | --------------------------------------------------------------- |
+| COUNTYFP    | Numeric state and county identifier                             |
+| NEVER       | Percentage of respondants responding "never" wearing masks      |
+| RARELY      | Percentage of respondants responding "rarely" wearing masks     |
+| SOMETIMES   | Percentage of respondants responding "sometimes" wearing masks  |
+| FREQUENTLY  | Percentage of respondants responding "frequently" wearing masks |
+| ALWAYS      | Percentage of respondants responding "always" wearing masks     |
 
-### COVID-19 Data
+Data Source 4:
+----------------
+• Data set - [COVID-19 Search Trends symptoms dataset](https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/table-search-trends.md)
+• Description – The dataset consists of aggregated, anonymized trends in Google searches for more than 400 health symptoms, signs, and conditions, such as cough, fever, and difficulty breathing. The dataset provides a time series for each region, showing the relative volume of searches for each symptom
 
-I initially began by looking at how COVID-19 affected the entire county. To find
-out how the county was impacted I reviewed the number of confirmed cases, and
-the number of new daily cases in Essex County, New Jersey. I also looked at the
-timeline of policys that were put in place such as masking mandates, and how
-often they were worn, to view any correlations between how the entire country
-was impacted. There were several datasets that I used for this analysis.
+Data Source 5:
+----------------
+• Data set - [COVID-19 Vaccination Search Insights](https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/table-vaccination-search-insights.md)
+• Description - This aggregated, anonymized data shows trends in search patterns related to COVID-19 vaccination. These trends in search patterns are made available with the intention of helping design, target, and evaluate public education campaigns. These trends reflect the relative interest in Google searches related to COVID-19 vaccination.
 
-#### <https://github.com/aaliyahfiala42/data-512-a7#covid-19-data-from-john-hopkins-university-raw_us_confirmed_casescsv>COVID-19 Data From John Hopkins University (RAW_us_confirmed_cases.csv)
-
-The cumulative confirmed case counts for where gathered from the Kaggle
-repository of John Hopkins University COVID-19 raw United States confirmed cases
-dataset. Data
-Source: <https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv>
-
-#### <https://github.com/aaliyahfiala42/data-512-a7#us-state-and-territorial-public-mask-mandates-from-april-10-2020-through-august-15-2021-by-county-by-day-mask-use-by-countycsv>U.S. State and Territorial Public Mask Mandates From April 10, 2020 through August 15, 2021 by County by Day (mask-use-by-county.csv)
-
-The data for masking mandates was sourced from the CDC dataset of masking
-mandates by county. Data
-Source: <https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i>.
-
- 
-
-Data sources Information
-========================================
-
-The data for this project is extracted has different aspects and way of
-collection. One source is CDC for county specific information, other John
-Hopkins with confirmed cases data shared on Kaggle and other is New York Times
-Survey data.
-
-Dataset Sources The RAW_us_confirmed_cases.csv file from the Kaggle repository
-of John Hopkins University COVID-19 data. This data is updated daily and recent
-version is used for analysis The CDC dataset of masking mandates by county. Note
-that the CDC stopped collecting this policy information in September 2021. The
-New York Times mask compliance survey data.
 
 Issues and Special Considerations
 ========================================
