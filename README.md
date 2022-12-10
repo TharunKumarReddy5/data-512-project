@@ -9,16 +9,13 @@
 Analysis of Google Search Patterns in Milwaukee County, WI during the COVID-19 pandemic
 =======================================================================================
 
-data-512-project
-================
-
 This repository contains the the final project documents and code for DATA 512
 Human Centered Data Science course project component at the University of
 Washington - Masters in Data Science program
 
 Date of Code Run: 2022-12-04
 
-Goal: Course Project
+Goal
 ====================
 
 We have all been affected by a worldwide pandemic for the past three years. This
@@ -37,35 +34,42 @@ COVID infection spread.
 
 County Assigned: Milwaukee County, Wisconsin, United States
 
-Reproducibility
----------------
+Below are the set of Research questions and Hypothesis the study tries to answer:
 
-This analysis contained in this report is meant to be fully reproducible.
-The [Checkouts by Title
-data](https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6) is
-publicly available through Seattle governments Open Data Program. However this
-dataset exceeds Github's current individual file size limit and is therefore if
-one wishes to reproduce with the full data set please visit the link above and
-download as csv. If for some reason the link is no longer available please
-visit <https://data.seattle.gov/> and search for "Checkouts by Title" or
-"Checkouts".
+Research Question 1 – How does the Public Mask Mandate in the county impacts the search for all COVID-19 symptoms? 
+Hypothesis 1 – • Individuals are X% less likely to search for symptoms if the Public Mask Mandate is effective in the county. • The mask mandate decreases the likelihood of searching for any symptoms within the last X days by Y%. 
+
+Research Question 2 – What are the top symptoms strongly impacted by the mask mandate? 
+Hypothesis 2 – People are X%, Y%, and Z% less likely to search for fever, chills, and fatigue in Milwaukee County during Mask Mandate 
+
+Research Question 3 - What are the highly correlated symptom search terms with the daily confirmed COVID-19 cases and fatalities before and after the mask mandate policy? 
+Hypothesis 3 – • “Severe chest pain” positively correlates with COVID-19 fatalities when no mask mandate exists. • A time-lag correlation of X days is observed between the daily number of confirmed cases with the top symptom search terms “cough” and “shortness of breath” during the mask mandate. 
+
+Research Question 4 - How are vaccination intent and side effect search terms correlated with mask mandate policies?
+Hypothesis 4 – Individuals showed X% more vaccination intention when the masking mandate was removed in the county
 
 Raw Data
---------
+====================
 
-The data is downloaded from the below sources: - The RAW_us_confirmed_cases.csv
-file from the [Kaggle repository of John Hopkins University COVID-19
-data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)  
-- The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins
-University COVID-19
-data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)  
-The data is structured as below for both data sets, with multiple columns for
-each additional day of data (wide format):
+The data is downloaded from the below sources: 
+- The RAW_us_confirmed_cases.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
+- The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)
+The data is structured as below for both data sets, with multiple columns for each additional day of data (wide format):
 
- 
+Column name	Description
+Province_State	Province or state
+Admin2	Country
+UID	Unique identifier
+iso2	Unused geography code
+iso3	Unused geography code
+code3	Unused geography code
+FIPS	Unique 5-digit identifier
+Lat	Latitude
+Long_	Longitude
+![image](https://user-images.githubusercontent.com/40633771/206841548-26b5bf29-c9a3-4cd7-9533-f58a566c5efe.png)
 
-The [CDC
-dataset](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i)
+
+The [CDC dataset](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i)
 of masking mandates by county. **THIS DATA IS NOT INCLUDED IN THIS REPOSITORY AS
 THE FILESIZE WAS TOO LARGE. PLEASE DOWNLOAD IT DIRECTLY FROM THE LINK LOCALLY**
 
@@ -100,7 +104,7 @@ Source: <https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Pub
  
 
 Data sources Information
-------------------------
+========================================
 
 The data for this project is extracted has different aspects and way of
 collection. One source is CDC for county specific information, other John
@@ -114,7 +118,7 @@ that the CDC stopped collecting this policy information in September 2021. The
 New York Times mask compliance survey data.
 
 Issues and Special Considerations
----------------------------------
+========================================
 
 1.  There are few data gaps in the confirmed cases data. To bypass through these
     gaps, rolling averages are used on confirmed cases data. This will eliminate
@@ -125,7 +129,7 @@ Issues and Special Considerations
     when inferring the impact of masking on the infection spread
 
 Human-Centered Considerations
------------------------------
+========================================
 
 This project could be very useful for someone who plans move to the Boston city
 or is already staying there. It contains the most recent data possible. It could
@@ -146,7 +150,7 @@ provided by the government and could anyway be misused if so were the intentions
 of people. This project does not aim to aid misuse of any form.
 
 Dependencies
-------------
+====================
 
 Install the dependencies from the requirements.txt file using
 
@@ -155,7 +159,7 @@ python -m pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Repository Structure
---------------------
+========================================
 
 Here are the main folders in our github data-512-project-common-analysis
 repository:
@@ -188,7 +192,7 @@ repository:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Input Data Files
-----------------
+====================
 
 -   RAW_us_confirmed_cases.csv - Consists of daily confirmed COVID cases for all
     counties in USA
@@ -203,7 +207,7 @@ Input Data Files
     compliance based on level of compliance
 
 Data (Source and Schema)
-------------------------
+========================================
 
 The [Education
 Statistics](https://datacatalog.worldbank.org/dataset/education-statistics) dataset
