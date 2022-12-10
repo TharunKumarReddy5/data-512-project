@@ -310,13 +310,13 @@ Data set Licensing
 Relevant documentation
 ----------------------
 
--   [1] Change point detection <https://centre-borelli.github.io/ruptures-docs/>
+[1] Change point detection <https://centre-borelli.github.io/ruptures-docs/>
 
--   [2] Difference-in-Difference <https://en.wikipedia.org/wiki/Difference_in_differences>
+[2] Difference-in-Difference <https://en.wikipedia.org/wiki/Difference_in_differences>
 
--   [3] Sliding Window Time Lagged Cross Correlation <https://towardsdatascience.com/four-ways-to-quantify-synchrony-between-time-series-data-b99136c4a9c9>
+[3] Sliding Window Time Lagged Cross Correlation <https://towardsdatascience.com/four-ways-to-quantify-synchrony-between-time-series-data-b99136c4a9c9>
 
--   [4] Granger Test <https://en.wikipedia.org/wiki/Granger_causality>
+[4] Granger Test <https://en.wikipedia.org/wiki/Granger_causality>
 
 Code Style
 ----------
