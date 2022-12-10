@@ -16,7 +16,7 @@ Washington - Masters in Data Science program
 Date of Code Run: 2022-12-04
 
 Goal
-===
+-------
 
 We have all been affected by a worldwide pandemic for the past three years. This
 has had a terrible and disruptive impact on many nations and has had a
@@ -58,7 +58,6 @@ Individuals showed X% more vaccination intention when the masking mandate was re
 
 Raw Data Sources
 ====================
-
 ### Data Source 1:
 - The RAW_us_confirmed_cases.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
 - The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)
@@ -158,73 +157,51 @@ repository:
 ├── README.md
 ├── LICENSE
 ├── data
-│   ├── RAW_us_confirmed_cases.csv
-│   ├── RAW_us_deaths.csv
-│   ├── mask-mandate-milwaukee.csv
-│   └── mask-use-by-county.csv
-├── Part1_Reflection_Statement.pdf
-├── Part2_VisualizationExplanation.pdf
+│   ├── Part1 Data.csv
+│   ├── US_NJ_34003.csv
+│   ├── US_WI_55079.xlsx
+│   ├── Vaccination Search Insights.xlsx
+│   ├── trends_columns.txt
+│   └── trends_columns.xlsx
+├── data
+│   ├── DATA 512 Project.ipynb
+│   ├── Tharun DATA 512 Project Analysis.ipynb
+│   └── Tharun DATA 512 Project Experiments.ipynb
 ├── plots
-│   ├── cases_per_capita.png
-│   ├── derivative_infection_rate.png
-│   ├── growth_factor.png
-│   ├── infection_rate.png
-│   ├── mask_mandate_coverage.png
-│   ├── transmission_rate.png
-│   └── EDA
-│       ├── cases_per_day.png
-│       ├── cumulative_cases.png
-│       ├── cumulative_deaths.png
-│       └── deaths_per_day.png
+│   └── Milwaukee_Bucks_logo.svg.png
+│   └── correlation
+│       ├── cough_correlation.png
+│       ├── fever_correlation.png
+│       ├── pneumonia_correlation.png
+│       ├── pneumonia_correlation_all.png
+│       ├── shortness_of_breath_correlation.png
+│       ├── shortness_of_breath_correlation_all.png
+│       └── sore_throat_correlation.png
+│   └── trends
+│       ├── cough_trends.png
+│       ├── did_percentage_change.png
+│       ├── fever_trends.png
+│       ├── infection_rate.png
+│       ├── pneumonia_trends.png
+│       ├── shortness_of_breath_trends.png
+│       ├── sore_throat_trends.png
+│       └── vaccination_trends.png
+│   └── archive
+│       ├── cough_14days_correlation.png
+│       ├── fever_14days_correlation.png
+│       ├── pneumonia_14days_correlation.png
+│       ├── shortness_of_breath_14days_correlation.png
+│       └── sore_throat_14days_correlation.png
+├── submissions
+│   └── Part1_Reflection_Statement.pdf
+│   └── Part1_VisualizationExplanation.pdf
+│   └── Tharun DATA 512 Project Final Report.pdf
+│   └── Tharun DATA 512 Project Part 2.pdf
+│   └── Tharun DATA 516 Project PechaKucha.pptx
 ├── requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Input Data Files
-====================
-
--   RAW_us_confirmed_cases.csv - Consists of daily confirmed COVID cases for all
-    counties in USA
-
--   RAW_us_deaths.csv - Consists of daily fatality count due to COVID for all
-    counties in USA
-
--   mask-mandate-milwaukee.csv - Mask mandate information for the Milwaukee
-    county
-
--   mask-use-by-county.csv - Survey that contains the percent values of mask
-    compliance based on level of compliance
-
-Data (Source and Schema)
-========================================
-
-The [Education
-Statistics](https://datacatalog.worldbank.org/dataset/education-statistics) dataset
-being used in this assignment is downloaded from the [World
-Bank](http://www.worldbank.org/). The dataset sources it's data from:
-
-1.  UIS ([UNESCO Institute for Statistics](http://uis.unesco.org/)) -
-    Administrative country data
-
-2.  Several International and Regional learning assessments
-
-3.  [World Bank Education Projects
-    Database](http://datatopics.worldbank.org/education/wQueries/qprojects) -
-    activities, components and sub-sectors of WB Education projects since 1998
-
-4.  [World Bank Education Expenditures
-    Database](http://datatopics.worldbank.org/education/wQueries/qexpenditures) -
-    Education expenditure data
-
-The datasets have been downloaded and added to
-the [data](https://github.com/CoderHam/data-512-final-project/tree/master/data) directory
-and consists of 5 parts that have been described below, plus one additional
-dataset for income groups:
-
-[EdStatsCountry.csv](https://github.com/CoderHam/data-512-final-project/tree/master/data/EdStatsCountry.csv)
-
- 
-
-Results Summary
+Findings
 ---------------
 
 ### Screenshots
