@@ -36,7 +36,7 @@ County Assigned: Milwaukee County, Wisconsin, United States
 
 Below are the set of Research questions and Hypothesis the study tries to answer:
 
-#### Research Question 1 – How does the Public Mask Mandate in the county impacts the search for all COVID-19 symptoms? 
+**** Research Question 1 **** – How does the Public Mask Mandate in the county impacts the search for all COVID-19 symptoms? 
 
 Hypothesis 1 – Individuals are X% less likely to search for symptoms if the Public Mask Mandate is effective in the county. • The mask mandate decreases the likelihood of searching for any symptoms within the last X days by Y%. 
 
