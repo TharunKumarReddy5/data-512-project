@@ -1,11 +1,7 @@
-<https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs>
-
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 ![contributors](https://img.shields.io/github/contributors/TharunKumarReddy5/data-512-project.svg)
-
 ![codesize](https://img.shields.io/github/languages/code-size/TharunKumarReddy5/data-512-project.svg)
-
 ![pullrequests](https://img.shields.io/github/issues-pr/TharunKumarReddy5/data-512-project.svg)
-
 ![closedpullrequests](https://img.shields.io/github/issues-pr-closed-raw/TharunKumarReddy5/data-512-project.svg)
 
 **Analysis of Google Search Patterns during the COVID-19 pandemic**
