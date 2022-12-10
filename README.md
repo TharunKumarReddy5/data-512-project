@@ -9,27 +9,18 @@
 Analysis of Google Search Patterns in Milwaukee County, WI during the COVID-19 pandemic
 =======================================================================================
 
-About the repository: This repository contains the the final project documents and code for DATA 512
-Human Centered Data Science course project component at the University of
-Washington - Masters in Data Science program
+About the repository: This repository contains the the final project documents and code for DATA 512 Human Centered Data Science course project component at the University of Washington - Masters in Data Science program
 
 Date of Code Run: 2022-12-04
-
-We have all been affected by a worldwide pandemic for the past three years. This
-has had a terrible and disruptive impact on many nations and has had a
-significant negative personal impact on many people and their families. The
-datafication of the pandemic is one feature that has been difficult to ignore
-during the past three years.
-
-data-512-project-common-analysis project is an analysis exercise with primary
-goal to understand the general biases in the models that originate from the bias
-in the input data used for training the model. This collaborative analysis gives
-a good clarity on how the masking policy is impacting the progression of the
-COVID virus among various counties in USA. It helps us understand the reasons,
-impact and other important factors that directly or indirectly impacted the
-COVID infection spread.
-
 County Assigned: Milwaukee County, Wisconsin, United States
+
+During any pandemic, individuals seek health information due to media curiosity, their own illness, or the illness of a family member. Health information seeking, also known as infodemiology, has been proposed as another disease surveillance method. During the epidemic, digital media played a massive role in spreading information. In addition to conventional surveillance, digital surveillance (internet) can provide intriguing trends concerning COVID-19's general concerns and aid in improving prediction models. The present digital surveillance analysis is driven by individuals' worries in the face of a pandemic. It is being used to determine the extent to which the Public Mask Mandate can safeguard people from getting COVID-19 symptoms. Google Trends (GT) is a valuable resource that may be used for digital monitoring. It may predict healthcare decisions in real time by following people's search behaviors and recording their worries (symptoms, vaccination availability, eligibility, and side effects). 
+
+Milwaukee is one of Wisconsin's largest counties with the highest number of detected COVID-19 cases. Illness-specific symptom search patterns on GT can alert the county's healthcare system to prepare and allocate resources needed ahead of time. The primary goal of this study is to leverage the GT to understand the trends in Milwaukee County citizens' search patterns for symptoms and correlate this information with the number of cases, fatalities, vaccinations, and impact of the public mask mandate in Milwaukee County. The findings can substantially aid in estimating the need for supplementary monitoring and policy methods and informing real-time public health choices. 
+
+Also, Vaccine hesitancy remains a severe challenge in ending the COVID-19 pandemic. Unfortunately, online platforms can also spread substantial misinformation about vaccines. The secondary goal of the analysis is to leverage the GT to understand the trends in vaccine misinformation and how public acceptance of vaccines changed over time with changes in mask mandate policies. Using this analysis, we can attribute these trends to public attitudes, interests during the varying vaccine availability, misinformation regarding the vaccines leading to a high unvaccinated population, and further target education among the citizens.
+
+The proposed analysis can make the policy changes more human-centered as it indirectly incorporates the participatory design strategy. The epidemiological information about the virus spread in the county alone isn't sufficient to devise an effective plan to attenuate the infection rate and accelerate vaccine administration. Embedding the end users' thoughts and concerns about the pandemic and vaccinations can provide real-time, immediate, quick, and cheap feedback to the algorithms that predict/decide policy changes. For example, local governments can develop a practical vaccine distribution algorithm and make accurate infection predictions if they know the concerns of the citizens of the county. It eliminates the scope for wrong interpretations and provides more transparency to the end users of the algorithms developed specifically for the county. Uncovering these wide ranges of insights while considering the context of virus spread reveals insights about individual behaviors and the relationships between different entities involved in the policy-making process.
 
 Below are the set of Research questions and Hypothesis the study tries to answer:
 
@@ -292,21 +283,13 @@ The eighth graph contains the correlation heatmap for PNEUMONIA symptom search
 
 **Vaccination causal inference graph (with change points)**
 
-The ninth graph contains the correlation heatmap for PNEUMONIA symptom search
+The ninth graph contains the causal inference graph for vaccination related search trends
 
-[Image9](https://github.com/TharunKumarReddy5/data-512-project/blob/main/plots/correlation/pneumonia_correlation_all.png)
+[Image9](https://github.com/TharunKumarReddy5/data-512-project/blob/main/plots/trends/vaccination_trends_all.png)
 
-![Alt text](https://github.com/TharunKumarReddy5/data-512-project/blob/main/plots/correlation/pneumonia_correlation_all.png)
+![Alt text](https://github.com/TharunKumarReddy5/data-512-project/blob/main/plots/trends/vaccination_trends_all.png)
 
 **Key Takeaways:** Most of the change points with positive slopes are aligned with the positive news regarding the availability, eligibility, and promotions like coupons announced by the government. Change points at negative sloped are associated with the negative news regarding the side effects and CDC pausing the vaccine administration. News about the COVID-19 variants also strongly impacted the vaccination search trends in Milwaukee County.
-
-Overall, it is evident from the above analysis as to why there arose a necessity
-for enforcing and removing masking policy. The analysis clearly shows an impact
-of masking on infection rate and how it accelerated after the mandate is
-removed. However, there are few exceptions where observed, where we see peak
-infection rates even after the masking policy is in place. This can be
-attributed to high impact of other aspects like vaccinations, recovery rates,
-hospitalizations
 
 License for this project
 ------------------------
@@ -316,37 +299,22 @@ License for this project
 Data set Licensing
 ------------------
 
--   The Johns Hopkins data is available under the [creative commons
-    license](https://creativecommons.org/licenses/by/4.0/) which means the data
-    is available with proper attribution.  
-    
+-   The Johns Hopkins data is available under the [creative commons license](https://creativecommons.org/licenses/by/4.0/) which means the data is available with proper attribution.
 
--   The CDC data is available under the below citation:  
-    CDC, COVID-19 Community Intervention & Critical Populations Task Force,
-    Monitoring & Evaluation Team, Mitigation Policy Analysis Unit, the CDC,
-    Center for State, Tribal, Local, and Territorial Support, Public Health Law
-    Program, and Max Gakh, Assistant Professor, School of Public Health,
-    University of Nevada, Las Vegas, “U.S. State and Territorial Orders
-    Requiring Masks in Public,” (August 15, 2021).  
+-   The CDC data is available under the below citation: CDC, COVID-19 Community Intervention & Critical Populations Task Force, Monitoring & Evaluation Team, Mitigation Policy Analysis Unit, the CDC, Center for State, Tribal, Local, and Territorial Support, Public Health Law Program, and Max Gakh, Assistant Professor, School of Public Health, University of Nevada, Las Vegas, “U.S. State and Territorial Orders Requiring Masks in Public,” (August 15, 2021).
     
-
--   The New York Times mask data is available under this [permissive
-    license](https://github.com/nytimes/covid-19-data/blob/master/LICENSE) which
-    is highly permissive with proper attribution.
+-   The New York Times mask data is available under this [permissive license](https://github.com/nytimes/covid-19-data/blob/master/LICENSE) which is highly permissive with proper attribution.
 
 Relevant documentation
 ----------------------
 
--   [1] Kaggle project <https://www.kaggle.com/ludobenistant/hr-analytics>
+-   [1] Change point detection <https://centre-borelli.github.io/ruptures-docs/>
 
--   [2] Latest report from Bureau of
-    Labour <https://www.bls.gov/news.release/jolts.nr0.htm>
+-   [2] Difference-in-Difference <https://en.wikipedia.org/wiki/Difference_in_differences>
 
--   [3] History of business
-    intelligence <https://www.betterbuys.com/bi/history-of-business-intelligence/>
+-   [3] Sliding Window Time Lagged Cross Correlation <https://towardsdatascience.com/four-ways-to-quantify-synchrony-between-time-series-data-b99136c4a9c9>
 
--   [4] Article on solving attrition with
-    data <https://towardsdatascience.com/solving-staff-attrition-with-data-3f09af2694cd>
+-   [4] Granger Test <https://en.wikipedia.org/wiki/Granger_causality>
 
 Code Style
 ----------
