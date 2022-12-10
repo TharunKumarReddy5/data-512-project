@@ -16,7 +16,7 @@ Washington - Masters in Data Science program
 Date of Code Run: 2022-12-04
 
 Goal
-====================
+===
 
 We have all been affected by a worldwide pandemic for the past three years. This
 has had a terrible and disruptive impact on many nations and has had a
