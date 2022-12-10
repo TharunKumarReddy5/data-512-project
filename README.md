@@ -56,6 +56,10 @@ The data is downloaded from the below sources:
 - The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)
 The data is structured as below for both data sets, with multiple columns for each additional day of data (wide format):
 
+| Attempt | #1  |
+| ------- | --- |
+| Seconds | 301 |
+
 Column name	Description
 Province_State	Province or state
 Admin2	Country
