@@ -55,8 +55,7 @@ Hypothesis 4 – Individuals showed X% more vaccination intention when the maski
 Raw Data Sources
 ====================
 
-Data Source 1:
-----------------
+### Data Source 1:
 - The RAW_us_confirmed_cases.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
 - The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)
 The data is structured as below for both data sets, with multiple columns for each additional day of data (wide format):
