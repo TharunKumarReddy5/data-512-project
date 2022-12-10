@@ -9,14 +9,11 @@
 Analysis of Google Search Patterns in Milwaukee County, WI during the COVID-19 pandemic
 =======================================================================================
 
-This repository contains the the final project documents and code for DATA 512
+About the repository: This repository contains the the final project documents and code for DATA 512
 Human Centered Data Science course project component at the University of
 Washington - Masters in Data Science program
 
 Date of Code Run: 2022-12-04
-
-Goal
--------
 
 We have all been affected by a worldwide pandemic for the past three years. This
 has had a terrible and disruptive impact on many nations and has had a
@@ -57,7 +54,7 @@ How are vaccination intent and side effect search terms correlated with mask man
 Individuals showed X% more vaccination intention when the masking mandate was removed in the county
 
 Raw Data Sources
-====================
+-----------------
 ### Data Source 1:
 - The RAW_us_confirmed_cases.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv)
 - The RAW_us_deaths.csv file from the [Kaggle repository of John Hopkins University COVID-19 data.](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_deaths.csv)
@@ -115,7 +112,7 @@ The New York Times mask compliance [survey data.]
 
 
 Issues and Special Considerations
-========================================
+----------------------------------
 
 1.  There are few data gaps in the confirmed cases data. To bypass through these
     gaps, rolling averages are used on confirmed cases data. This will eliminate
@@ -126,7 +123,7 @@ Issues and Special Considerations
     when inferring the impact of masking on the infection spread
 
 Human-Centered Considerations
-========================================
+----------------------------------
 
 All the proposed analysis methods in the current study are designed with human-centeredness in mind. Firstly, the proposed design for the study is people-centered. It embeds the end users' thoughts and concerns about the symptoms and vaccines, leveraging them to develop policy health care changes for citizens. It leverages the data produced by the people for the people. 
 
@@ -137,7 +134,7 @@ Thirdly, the design process involves ethical considerations. It uses masked data
 Finally, the proposed solution of the study is highly reproducible. The methodology proposed can be leveraged to fit any data consisting of people's searches by validating and incorporating the assumptions made in regression and correlation analysis.
 
 Dependencies
-====================
+----------------------------------
 
 Install the dependencies from the requirements.txt file using
 
@@ -146,10 +143,9 @@ python -m pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Repository Structure
-========================================
+----------------------------------
 
-Here are the main folders in our github data-512-project-common-analysis
-repository:
+Here are the main folders in our github data-512-project repository:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .
