@@ -72,8 +72,7 @@ The data is structured as below for both data sets, with multiple columns for ea
 | Lat             | Latitude                  |
 | Long\_          | Longitude                 |
 
-Data Source 2:
-----------------
+### Data Source 2:
 The [CDC dataset](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i) of masking mandates by county. **THIS DATA IS NOT INCLUDED IN THIS REPOSITORY AS THE FILESIZE WAS TOO LARGE. PLEASE DOWNLOAD IT DIRECTLY FROM THE LINK LOCALLY**
 
 | Column name                       | Description               |
@@ -89,8 +88,7 @@ The [CDC dataset](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territo
 | URL                               | URL                       |
 | Citation                          | Citation                  |
 
-Data Source 3:
-----------------
+### Data Source 3:
 The New York Times mask compliance [survey data.]
 
 | Column name | Description                                                     |
@@ -102,13 +100,11 @@ The New York Times mask compliance [survey data.]
 | FREQUENTLY  | Percentage of respondants responding "frequently" wearing masks |
 | ALWAYS      | Percentage of respondants responding "always" wearing masks     |
 
-Data Source 4:
-----------------
+### Data Source 4:
 • Data set - [COVID-19 Search Trends symptoms dataset](https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/table-search-trends.md)
 • Description – The dataset consists of aggregated, anonymized trends in Google searches for more than 400 health symptoms, signs, and conditions, such as cough, fever, and difficulty breathing. The dataset provides a time series for each region, showing the relative volume of searches for each symptom
 
-Data Source 5:
-----------------
+### Data Source 5:
 • Data set - [COVID-19 Vaccination Search Insights](https://github.com/GoogleCloudPlatform/covid-19-open-data/blob/main/docs/table-vaccination-search-insights.md)
 • Description - This aggregated, anonymized data shows trends in search patterns related to COVID-19 vaccination. These trends in search patterns are made available with the intention of helping design, target, and evaluate public education campaigns. These trends reflect the relative interest in Google searches related to COVID-19 vaccination.
 
@@ -127,23 +123,13 @@ Issues and Special Considerations
 Human-Centered Considerations
 ========================================
 
-This project could be very useful for someone who plans move to the Boston city
-or is already staying there. It contains the most recent data possible. It could
-help someone understand the crime statistics of the city such as the main places
-and times where these crimes happen, etc. and help make better decisions about
-where to stay and which places to avoid in order to stay safe. Survival instinct
-is one of the most basic instincts to all kinds of life and hopefully this work
-could help someone improve their chances of getting hurt.
+All the proposed analysis methods in the current study are designed with human-centeredness in mind. Firstly, the proposed design for the study is people-centered. It embeds the end users' thoughts and concerns about the symptoms and vaccines, leveraging them to develop policy health care changes for citizens. It leverages the data produced by the people for the people. 
 
-It could be the case that this analysis might result in showing that certain
-parts of the city are more common for certain crimes. And many-a-times, the
-areas could be tied down to a certain community but that is not the intent of
-the study and hence the mapping is not a part of this study or the dataset. The
-intent here is just to provide information for people to make smarter choices in
-order to stay safe and I do not wish for any service provider to alter their
-services based on this information. Moreover, this information is public and
-provided by the government and could anyway be misused if so were the intentions
-of people. This project does not aim to aid misuse of any form.
+Secondly, I adopted a participatory design where the data from users' searches is incorporated into the developed solution in real time. This immediate, quick, and cheap feedback will help proactively update the policy suggestions based on the actions performed by the people. Especially for this task, given the anonymity in the virus dynamics and limited knowledge about the nuances in the study, it is critical to give and take inputs in a collaborative cohort setting. 
+
+Thirdly, the design process involves ethical considerations. It uses masked data produced by the people of Milwaukee County and is free of other demographic biases. For the data leveraged by the above three methods proposed, differential privacy has been used by adding artificial noise, enabling high-quality results without identifying anyone. To further protect people's privacy, it is ensured that the study leverages no personal information or individual search queries. 
+
+Finally, the proposed solution of the study is highly reproducible. The methodology proposed can be leveraged to fit any data consisting of people's searches by validating and incorporating the assumptions made in regression and correlation analysis.
 
 Dependencies
 ====================
